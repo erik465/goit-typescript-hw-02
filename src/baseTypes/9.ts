@@ -2,6 +2,20 @@
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
 
+type Status = 'open' | 'close'
+type PageDetails = {
+  createdAt: Date,
+  updatedAt: Date
+}
+
+type page ={
+  title:string,
+  likes:number,
+  accounts:string[],
+  status:Status,
+  details?:PageDetails
+}
+
 const page1 = {
   title: 'The awesome page',
   likes: 100,
