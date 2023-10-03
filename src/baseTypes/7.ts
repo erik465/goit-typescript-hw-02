@@ -13,4 +13,11 @@ enum DAYS {
   Sunday = 'Sunday'
 }
 
-let isWeekend:(day:DAYS) => boolean;
+function isWeekend(day:DAYS):boolean {
+    if(day === DAYS.Saturday || day === DAYS.Sunday){
+      return true;
+    }
+    else{
+      return false;
+    }
+};
